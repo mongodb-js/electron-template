@@ -36,8 +36,10 @@
     "clean": "rimraf dist",
     "webpack": "webpack --config ./webpack.config.js",
     "webpack:watch": "webpack --config ./webpack.config.js --watch",
+    "webpack-no-electron": "webpack --config ./webpack.react.js",
     "prestart": "npm run clean",
     "start": "npm run webpack && concurrently --kill-others \"npm run webpack:watch\" \"electron ./dist/main.js\"",
+    "start-no-electron": "npm run clean && npm run webpack-no-electron && npx http-server ./dist",
     "test": "jest"
   },
   "author": "",

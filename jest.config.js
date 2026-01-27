@@ -17,6 +17,6 @@ module.exports = {
     '\\.(css|less)$': 'identity-obj-proxy'
   },
   setupFilesAfterEnv: [
-    '@testing-library/jest-dom/extend-expect'
+    '<rootDir>/test/setup.ts'
   ]
 };

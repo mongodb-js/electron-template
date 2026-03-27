@@ -17,6 +17,9 @@ npm install
 npm start
 ```
 
+To run it as an ordinary website rather than electron app (might be useful on headless systems):
+instead of `npm start`, execute `npm run start-no-electron`.
+
 ## Testing
 
 Tests are run with the [Jest](https://jestjs.io/) testing framework.
